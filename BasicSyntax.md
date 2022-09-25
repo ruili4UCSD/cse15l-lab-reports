@@ -4,7 +4,7 @@
 ### Student Gender: Male
 
 ____
-# [Basic Section]
+# Basic Section
 
 My name is Rui Li. A student. A human.
 This is another paragraph.
@@ -24,7 +24,7 @@ _Or this_
 > Multiple paragrapgh
 > - First
 > - Second
->> Nested? No, nest not work. 
+>> Nested? 
 
 1. OrderedList1
 2. OrderedList2
@@ -41,7 +41,7 @@ _Or this_
 
 ---
 
-## [Element Section]
+## Element Section
     <html>
       <head>
       This is a code block.
