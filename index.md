@@ -71,4 +71,8 @@ Like [This] [1], This is a link to Google.
 
 [1]: <https://www.google.com/>
 
+**Next, Let's try Escaping Characters (转义字符)**
+\\\*\`\-\{\}\+\<\#\-\!\|
 
+**I can also use html element sometimes**
+Like use <em> EM </em>
