@@ -68,9 +68,27 @@
 
 ![](SearchEngine1.png)
 
-![](SearchEngine1.png)
+For this screenshot, the method `handleRequest` is invoked. The url I entered is passed into the method as a parameter. Then it checks my path using `url.getPath()`, then pass it to the if statements, and found that I typed `/add`. 
 
-![](SearchEngine1.png)
+Then goes into that if block, using `url.getQuery().split("=" )` splits the input after `?` in my path with `=`, and passes it into the array `parameters` as an element.
+
+Then compare the first element `parameter[0]` of the array `parameter`, and find that the first element is `s`, so enter the code block, let the second element of the array `parameter`, which is 'iWillGiveUpThisOne' , pass in the global array `searchList`, then use `toString()` to convert the global array `searchList` to a string and return it.
+
+If there is no second element (ie `parameter[2]` is empty), print `404 Not Found!`. Finally, the professor's server class prints the string to the screen.
+
+![](SearchEngine2.png)
+
+The invocation of the second screenshot is no different from the first screenshot. The only difference is that the global array `searchList` now contains an element `iWillGiveUpThisOne`. After we passed `iWillLeaveThisOne` as a parameter to the array, the global array `searchList` is printed on the screen.
+
+![](SearchEngine3.png)
+
+For this screenshot, the method `handleRequest` is invoked. The url I entered is passed into the method as a parameter. It then uses `url.getPath()` to check my path, then pass it into if statements, sees that I typed `/search`, and goes into that if block.
+
+using `url.getQuery().split("=" )` splits the input after `?` in my path with `=`, and passes it into the array `parameters` as an element. Then compare the first element `parameter[0]` of the array `parameter` and find that the first element is `s`, so enter the code block.
+
+Then, use a for loop to traverse the global array `searchList`, and if any element in the array contains `parameter[1]`, push that element into a new array `newList`. Then, use the method `toString()` to return the string form of the array `newList` to the professor's server class and print it to the screen.
+
+If `parameter[1]` does not exist, print `404 Not Found!`.
 
 ---
 
